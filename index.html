@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Vaibhavi 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e419ab, #94acd4);
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #ff4e8b;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff2e75;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: #ff4e8b;
+            border: 2px solid #ff4e8b;
+            position: relative;
+        }
+
+        .message {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 500;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 style="color: #000;">Hi vaibhavi ~🍁</h1>
+
+        <p>
+            I know I might have messed up somewhere.
+Maybe I didn’t say the right thing at the right time.
+But if there’s even a small chance…
+
+        </p>
+
+        <p style="color: azure;">
+            Will you forgive me?
+
+        </p>
+
+
+        <button class="btn-primary" onclick="showMessage()">Yes 😊</button>
+        <button class="btn-secondary" onmouseover="moveButton(this)">No 😒</button>
+
+        <div class="message" id="response" style="color: #333;">
+            I knew it... You always make the right decisions 😌💖
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("response").style.display = "block";
+        }
+
+        function moveButton(button) {
+            button.style.position = "absolute";
+            button.style.top = Math.random() * window.innerHeight + "px";
+            button.style.left = Math.random() * window.innerWidth + "px";
+        }
+    </script>
+
+</body>
+</html>
